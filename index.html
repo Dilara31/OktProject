@@ -4,70 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <title>Document</title>
 
-    <style>
-        .c1 {
-            display: flex;
-            justify-content: flex-start;
-            border:2px solid red;
-        }
-        
-        .wrc11 {
-            width: 30%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .c11 {
-            width: 70%;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: flex-start;
-            padding: 5px;
-        }
-
-        .c12 {
-            display: flex;
-            flex-direction: column;
-            width: 30%;
-        }
-
-        img {
-            min-height: 70%;
-        }
-        
-    </style>
 </head>
-
 <body>
-    <div class="c1">
+  <div class="wrap">
+    <header>
+        <div class="navigation">
+            <div class="nav">
+                <a href="#"><b>Головна</b></a>
+                <a href="#">Блог</a>
+                <a href="#">Контактна форма</a>
+            </div>
 
-        <div class="wrc11">
-            <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, explicabo.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
 
-        <div class="c11">
-
-            <div class="c12">
-                <img src="https://img1.goodfon.ru/wallpaper/nbig/4/5f/beach-sand-sea-plants.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+       <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://turlines.ru/uploads/thumbs/turs/730x500_art9181cae8467d736f137dc68d3041f3a3.png" class="d-block w-100" alt="...">
+                <div class="img-txt">Про подорожі</div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/cb/5d/98/caption.jpg" class="d-block w-100" alt="...">
+                <div class="img-txt">Про подорожі</div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/beach-sea-sand-and-palm-in-summer-day_63047-1260.jpg?size=626&ext=jpg" class="d-block w-100" alt="...">
+                <div class="img-txt">Про подорожі</div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       </div>
 
-            <div class="c12">
-                <img src="https://img5.goodfon.com/wallpaper/nbig/5/e0/pesok-more-pliazh-otdykh-beach-sea-sand-paradise-vacation-pa.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </header>
+    <main>
+        <div class="mostplaces">
+            <h2> Найпопулярніші місця</h2>
+
+            <div class="places">
+                <div class="place">
+                    <img src="https://images.theconversation.com/files/296408/original/file-20191010-188792-1x9szpj.jpg?ixlib=rb-1.1.0&rect=0%2C209%2C4665%2C3435&q=45&auto=format&w=926&fit=clip" alt="#">
+                    <h3>Singapoure</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae? Sint alias a deleniti ducimus inventore distinctio ratione fuga cum. Veniam eius repellat ipsum labore?</p>
+                </div>
+                <div class="place">
+                    <img src="https://smartcities.moscow/wp-content/uploads/2021/03/01.jpg" alt="#">
+                    <h3>Moscow</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae? Sint alias a deleniti ducimus inventore distinctio ratione fuga cum. Veniam eius repellat ipsum labore?</p>
+                </div>
+                <div class="place">
+                    <img src="https://www.gannett-cdn.com/-mm-/f8f2f342f6a85d18b768898d9870fbfd6195c440/c=0-193-2116-1388/local/-/media/2015/01/24/USATODAY/USATODAY/635577030179736795-476881195.jpg?width=2116&height=1195&fit=crop&format=pjpg&auto=webp" alt="#">
+                    <h3>USA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae? Sint alias a deleniti ducimus inventore distinctio ratione fuga cum. Veniam eius repellat ipsum labore?</p>
+                </div>
+                <div class="place">
+                    <img src="https://www.planetware.com/wpimages/2020/08/japan-best-cities-tokyo.jpg" alt="#">
+                    <h3>Tokyo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae? Sint alias a deleniti ducimus inventore distinctio ratione fuga cum. Veniam eius repellat ipsum labore?</p>
+                </div>
+                <div class="place">
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/07/08/paris.jpg?width=982&height=726&auto=webp&quality=75" alt="#">
+                    <h3>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae? Sint alias a deleniti ducimus inventore distinctio ratione fuga cum. Veniam eius repellat ipsum labore?</p>
+                </div>
+                <div class="place">
+                    <img src="https://kiyavia.com/files/cities/great-britain/London_1920.jpg" alt="#">
+                    <h3>London</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestiae? Sint alias a deleniti ducimus inventore distinctio ratione fuga cum. Veniam eius repellat ipsum labore?</p>
+                </div>
             </div>
-
-            <div class="c12">
-                <img src="https://images.unsplash.com/photo-1520520731457-9283dd14aa66?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhJTIwYmVhY2h8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-
         </div>
 
-    </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
 </body>
 </html>
