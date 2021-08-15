@@ -1,0 +1,80 @@
+.wrap {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav > a {
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.social > a {
+    margin: 15px;
+    color: #c4c4c4;
+}
+
+.social > a:hover {
+    color: #30ABAE;
+    transition: all 0.3s;
+}
+
+
+
+.carousel-item > img {
+    width: 90%;
+    height: 700px;
+}
+
+.img-txt {
+    position: absolute;
+    font-size: 100px;
+    bottom: 0%;
+    margin-top: 500px;
+    margin-left: 470px;
+    margin-bottom: 130px;
+}
+
+.places {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.place {
+    width: 342px;
+}
+
+.place > img {
+    width: 342px;
+    height: 157px;
+}
+
+.place > h3 {
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.place > p {
+    box-sizing: border-box;
+    padding-left: 30px;
+    text-align: justify;
+    border-left: 2px solid red;
+}
+
+.mostplaces > h2 {
+    margin: 30px;
+    text-align: center;
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    background-color: #16595A;
+    margin-top: 20px;
+}
